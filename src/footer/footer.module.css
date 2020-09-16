@@ -1,0 +1,19 @@
+.footerBlock {
+    height: 40vh;
+    background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+}
+
+.socNetworkContainer {
+    width: 30%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socNetworkContainer div {
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+}

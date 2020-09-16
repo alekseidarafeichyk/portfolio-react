@@ -1,0 +1,18 @@
+.contactsBlock {
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.form {
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
