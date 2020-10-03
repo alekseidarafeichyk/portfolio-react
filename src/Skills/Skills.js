@@ -3,16 +3,31 @@ import style from './Skills.module.css'
 import styleContainer from './../common/styles/Сontainer.module.css'
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
+import reactLogo from "../assets/image/react.png";
+import reduxLogo from "../assets/image/redux.png";
+import jsLogo from "../assets/image/javascript.png";
+import htmlLogo from "../assets/image/html.png";
+import cssLogo from "../assets/image/CSS.3png.png";
+import tsLogo from "../assets/image/typescript.png";
 
 export const Skills = () => {
+    const reactStyle = {backgroundImage: `url(${reactLogo})`,};
+    const reduxStyle = {backgroundImage: `url(${reduxLogo})`,};
+    const jsStyle = {backgroundImage: `url(${jsLogo})`,};
+    const htmlStyle = {backgroundImage: `url(${htmlLogo})`,};
+    const cssStyle = {backgroundImage: `url(${cssLogo})`,};
+    const tsStyle = {backgroundImage: `url(${tsLogo})`,};
     return (
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={'Skills'}/>
                 <div className={style.skills}>
-                    <Skill title='JS' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                    <Skill title='CSS' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                    <Skill title='React' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    <Skill style={reactStyle} title='React' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    <Skill style={reduxStyle} title='Redux' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    <Skill style={jsStyle} title='JavaScript' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    <Skill style={tsStyle} title='Typescript' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    <Skill style={htmlStyle} title='HTML' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    <Skill style={cssStyle} title='CSS' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
                 </div>
             </div>
         </div>
