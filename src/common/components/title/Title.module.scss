@@ -1,0 +1,32 @@
+
+.projectsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    .title {
+        margin-bottom: 83px;
+        margin-top: 17px;
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 46px;
+            font-weight: 700;
+            letter-spacing: -.25px;
+            line-height: 100%;
+            color: #f0f0f0;
+            margin: 0px;
+            position: relative;
+            &::after {
+                display: block;
+                content: '';
+                height: 4px;
+                width: 30%;
+                position: absolute;
+                top: 73px;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                background-color: #009e66;
+            }
+        }
+
+    }
+}
+

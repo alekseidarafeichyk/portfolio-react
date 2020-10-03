@@ -7,7 +7,7 @@ import {Projects} from "./projects/Projects";
 import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/footer";
 
-function App() {
+function App () {
   return (
     <div className="App">
       <Header/>
