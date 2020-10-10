@@ -24,6 +24,7 @@
           line-height: 1.5;
           margin-bottom: 20px;
           border: none;
+          box-sizing: border-box;
           &:focus {
             outline: 1px solid #009e66;
           }
@@ -41,6 +42,7 @@
           line-height: 1.5;
           margin-bottom: 20px;
           color: #777;
+          box-sizing: border-box;
           &:focus {
             outline: 1px solid #009e66;
           }
