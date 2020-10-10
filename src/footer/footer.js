@@ -1,6 +1,6 @@
 import React from "react";
 import styleContainer from './../common/styles/Сontainer.module.css'
-import style from './footer.module.css'
+import style from './footer.module.scss'
 
 
 export const Footer = () => {
@@ -8,10 +8,10 @@ export const Footer = () => {
         <footer>
             <div className={`${styleContainer.container} ${style.footerBlock}`}>
                 <ul className={style.socNetworkContainer}>
-                    <li><a>Facebook</a></li>
-                    <li><a>VK</a></li>
-                    <li><a>Instagram</a></li>
-                    <li><a>LinkedIn</a></li>
+                    <li><a href={'#'}>Facebook</a></li>
+                    <li><a href={'#'}>VK</a></li>
+                    <li><a href={'#'}>Instagram</a></li>
+                    <li><a href={'#'}>LinkedIn</a></li>
                 </ul>
                 <p className={style.p}>© 2020 All Rights Reserved.</p>
             </div>
