@@ -1,6 +1,9 @@
+@import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
+
+
 .mainBlock {
     min-height: 100vh;
-    background-color: #111;
     color: #fff;
     .mainBlockContainer{
         display: flex;
@@ -8,11 +11,9 @@
         .text {
             width: 300px;
             h1 {
-                font-size: 39px;
-                font-weight: 700;
+                @include text-settings($fontFamily,39px,700,normal);
                 letter-spacing: 1px;
                 margin-bottom: 34px;
-                font-family: Poppins,sans-serif;
             }
             p {
                 font-size: 26px;

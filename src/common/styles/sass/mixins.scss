@@ -1,0 +1,7 @@
+@mixin text-settings ($fontFamily,$fontSize,$fontWeight,$lineHeight){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+

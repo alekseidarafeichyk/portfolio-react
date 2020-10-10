@@ -5,10 +5,10 @@ export const Nav = () => {
     return (
         <div >
             <ul className={styles.nav}>
-                <li className={styles.navItem}><a href="">Главная</a></li>
-                <li className={styles.navItem}><a href="">Скиллы</a></li>
-                <li className={styles.navItem}><a href="">Проекты</a></li>
-                <li className={styles.navItem}><a href="">Контакты</a></li>
+                <li className={styles.navItem}><a href="">Home</a></li>
+                <li className={styles.navItem}><a href="">Skills</a></li>
+                <li className={styles.navItem}><a href="">Projects</a></li>
+                <li className={styles.navItem}><a href="">Contact</a></li>
             </ul>
         </div>
     )

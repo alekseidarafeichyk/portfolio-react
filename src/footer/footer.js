@@ -11,9 +11,9 @@ export const Footer = () => {
                     <li><a>Facebook</a></li>
                     <li><a>VK</a></li>
                     <li><a>Instagram</a></li>
-                    <li><a>1sdfsdfdsfdsfds</a></li>
+                    <li><a>LinkedIn</a></li>
                 </ul>
-                <p className={style.p}>© 2020 beingeorge, All Rights Reserved.</p>
+                <p className={style.p}>© 2020 All Rights Reserved.</p>
             </div>
         </footer>
     )
