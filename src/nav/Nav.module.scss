@@ -1,8 +1,8 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    width: 300px;
     margin-right: 40px;
+    flex-wrap: wrap;
     .navItem {
         font-family: Poppins,sans-serif;
         font-weight: 400;
@@ -13,6 +13,8 @@
             color: #e6e6e6;
             font-size: 15px;
             padding: 0;
+            margin: 10px;
+
         }
     }
 }
