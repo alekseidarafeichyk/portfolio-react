@@ -1,7 +1,13 @@
-@mixin text-settings ($fontFamily,$fontSize,$fontWeight,$lineHeight){
+@mixin text-settings($fontFamily,$fontSize,$fontWeight,$lineHeight) {
   font-family: $fontFamily;
   font-size: $fontSize;
   font-weight: $fontWeight;
   line-height: $lineHeight;
 }
 
+@mixin flex($display,$justifyContent,$alignItems,$flexWrap) {
+  display: $display;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $flexWrap;
+}

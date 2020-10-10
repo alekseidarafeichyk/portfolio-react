@@ -6,6 +6,8 @@
     min-height: 100vh;
     color: #fff;
     .mainBlockContainer{
+        //@include flex(flex,space-around,stretch,nowrap);
+
         display: flex;
         justify-content: space-around;
         .text {
