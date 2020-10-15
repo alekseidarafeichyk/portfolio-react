@@ -2,7 +2,6 @@ import React from "react";
 import styleContainer from './../common/styles/Сontainer.module.css'
 import style from './footer.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
 import {faFacebook} from '@fortawesome/free-brands-svg-icons'
 import {faVk} from '@fortawesome/free-brands-svg-icons'
 import {faInstagram} from '@fortawesome/free-brands-svg-icons'
