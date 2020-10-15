@@ -3,11 +3,12 @@
 
 
 .mainBlock {
-    min-height: 100vh;
+    min-height: 43vh;
     color: #fff;
+    background-color: #111111f5;
+    padding-bottom: 30px;
     .mainBlockContainer{
         //@include flex(flex,space-around,stretch,nowrap);
-
         display: flex;
         justify-content: space-around;
         .text {

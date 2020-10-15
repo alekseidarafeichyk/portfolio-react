@@ -31,34 +31,35 @@ export const Contacts = () => {
         axios.post('https://message-nodejs-server.herokuapp.com/sendMessage',personalDataUser)
     }
 
-    return (
-        <div className={`${styleContainer.container} ${style.contactsBlock}`}>
-            <Title title={'Contact'}/>
-            <form onSubmit={handleSubmit} className={style.form}>
-                <input placeholder={'Name'}
-                       type="text"
-                       className={style.input}
-                       value={personalDataUser.name}
-                       onChange={handleNameChange}
-                />
-                <input placeholder={'Email'}
-                       type="text"
-                       className={style.input}
-                       value={personalDataUser.email}
-                       onChange={handleEmailChange}
+    return (<div className={style.contactBlock}>
+            <div className={`${styleContainer.container} ${style.contactsBlockContainer}`}>
+                <Title title={'Contact'}/>
+                <form onSubmit={handleSubmit} className={style.form}>
+                    <input placeholder={'Name'}
+                           type="text"
+                           className={style.input}
+                           value={personalDataUser.name}
+                           onChange={handleNameChange}
+                    />
+                    <input placeholder={'Email'}
+                           type="text"
+                           className={style.input}
+                           value={personalDataUser.email}
+                           onChange={handleEmailChange}
                     /><input placeholder={'Number'}
-                       type="text"
-                       className={style.input}
-                       value={personalDataUser.number}
-                       onChange={handleNumberChange}
+                             type="text"
+                             className={style.input}
+                             value={personalDataUser.number}
+                             onChange={handleNumberChange}
                 />
-                <textarea placeholder={'Message'}
-                          className={style.textarea}
-                          value={personalDataUser.message}
-                          onChange={handleMessageChange}
-                />
-                <button className={style.button}>Send message</button>
-            </form>
+                    <textarea placeholder={'Message'}
+                              className={style.textarea}
+                              value={personalDataUser.message}
+                              onChange={handleMessageChange}
+                    />
+                    <button className={style.button}>Send message</button>
+                </form>
+            </div>
         </div>
     )
 }
