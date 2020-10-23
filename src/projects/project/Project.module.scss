@@ -6,6 +6,9 @@
   padding: 0px 15px;
   margin-bottom: 30px;
 
+  @media screen and (max-width: 487px) {
+    width: auto;
+  }
   .projectLogo {
     display: flex;
     justify-content: center;

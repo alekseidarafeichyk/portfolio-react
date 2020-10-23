@@ -9,6 +9,7 @@ import jsLogo from "../assets/image/javascript.png";
 import htmlLogo from "../assets/image/html.png";
 import cssLogo from "../assets/image/CSS.3png.png";
 import tsLogo from "../assets/image/typescript.png";
+import Zoom from 'react-reveal/Zoom';
 
 export const Skills = () => {
     const reactStyle = {backgroundImage: `url(${reactLogo})`,};
@@ -22,13 +23,31 @@ export const Skills = () => {
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={'My skills'}/>
                 <div className={style.skills}>
-                    <Skill style={reactStyle} title='React' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                    <Skill style={reduxStyle} title='Redux' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                    <Skill style={jsStyle} title='JavaScript' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                    <Skill style={tsStyle} title='Typescript' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                    <Skill style={htmlStyle} title='HTML' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                    <Skill style={cssStyle} title='CSS' description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                </div>
+                    <Zoom top>
+                        <Skill style={reactStyle} title='React'
+                               description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    </Zoom>
+                    <Zoom top>
+                        <Skill style={reduxStyle} title='Redux'
+                               description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    </Zoom>
+                    <Zoom top>
+                        <Skill style={jsStyle} title='JavaScript'
+                               description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    </Zoom>
+                    <Zoom top>
+                    <Skill style={tsStyle} title='Typescript'
+                           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    </Zoom>
+                    <Zoom top>
+                    <Skill style={htmlStyle} title='HTML'
+                           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    </Zoom>
+                    <Zoom top>
+                    <Skill style={cssStyle} title='CSS'
+                           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    </Zoom>
+                    </div>
             </div>
         </div>
     )

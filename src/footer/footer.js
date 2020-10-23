@@ -7,6 +7,7 @@ import {faVk} from '@fortawesome/free-brands-svg-icons'
 import {faInstagram} from '@fortawesome/free-brands-svg-icons'
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faTelegram} from '@fortawesome/free-brands-svg-icons'
+import Zoom from 'react-reveal/Zoom';
 
 
 
@@ -16,11 +17,13 @@ export const Footer = () => {
             <div className={style.footerBlock}>
                 <div className={`${styleContainer.container} ${style.footerBlockContainer}`}>
                     <ul className={style.socNetworkContainer}>
-                        <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faFacebook } /></a></li>
-                        <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faVk } /></a></li>
-                        <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faInstagram} /></a></li>
-                        <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faLinkedin} /></a></li>
-                        <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faTelegram} /></a></li>
+                        <Zoom top>
+                            <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faFacebook}/></a></li>
+                            <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faVk}/></a></li>
+                            <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faInstagram}/></a></li>
+                            <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faLinkedin}/></a></li>
+                            <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faTelegram}/></a></li>
+                        </Zoom>
                     </ul>
                     <p className={style.p}>© 2020 All Rights Reserved.</p>
                 </div>

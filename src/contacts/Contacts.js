@@ -3,6 +3,8 @@ import styleContainer from './../common/styles/Сontainer.module.css'
 import style from './Contacts.module.scss'
 import {Title} from "../common/components/title/Title";
 import axios from 'axios';
+import Zoom from 'react-reveal/Zoom';
+
 
 
 export const Contacts = () => {
@@ -34,31 +36,33 @@ export const Contacts = () => {
     return (<div className={style.contactBlock}>
             <div className={`${styleContainer.container} ${style.contactsBlockContainer}`}>
                 <Title title={'Contact'}/>
-                <form onSubmit={handleSubmit} className={style.form}>
-                    <input placeholder={'Name'}
-                           type="text"
-                           className={style.input}
-                           value={personalDataUser.name}
-                           onChange={handleNameChange}
+                <Zoom left>
+                    <form onSubmit={handleSubmit} className={style.form}>
+                        <input placeholder={'Name'}
+                               type="text"
+                               className={style.input}
+                               value={personalDataUser.name}
+                               onChange={handleNameChange}
+                        />
+                        <input placeholder={'Email'}
+                               type="text"
+                               className={style.input}
+                               value={personalDataUser.email}
+                               onChange={handleEmailChange}
+                        /><input placeholder={'Number'}
+                                 type="text"
+                                 className={style.input}
+                                 value={personalDataUser.number}
+                                 onChange={handleNumberChange}
                     />
-                    <input placeholder={'Email'}
-                           type="text"
-                           className={style.input}
-                           value={personalDataUser.email}
-                           onChange={handleEmailChange}
-                    /><input placeholder={'Number'}
-                             type="text"
-                             className={style.input}
-                             value={personalDataUser.number}
-                             onChange={handleNumberChange}
-                />
-                    <textarea placeholder={'Message'}
-                              className={style.textarea}
-                              value={personalDataUser.message}
-                              onChange={handleMessageChange}
-                    />
-                    <button className={style.button}>Send message</button>
-                </form>
+                        <textarea placeholder={'Message'}
+                                  className={style.textarea}
+                                  value={personalDataUser.message}
+                                  onChange={handleMessageChange}
+                        />
+                        <button className={style.button}>Send message</button>
+                    </form>
+                </Zoom>
             </div>
         </div>
     )
