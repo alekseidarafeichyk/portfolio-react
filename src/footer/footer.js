@@ -18,11 +18,11 @@ export const Footer = () => {
                 <div className={`${styleContainer.container} ${style.footerBlockContainer}`}>
                     <ul className={style.socNetworkContainer}>
                         <Zoom top>
-                            <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faFacebook}/></a></li>
-                            <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faVk}/></a></li>
-                            <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faInstagram}/></a></li>
-                            <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faLinkedin}/></a></li>
-                            <li><a href={'#'}><FontAwesomeIcon className={style.icon} icon={faTelegram}/></a></li>
+                            <li><a href={'https://www.instagram.com/leshatrikster/?hl=ru'}><FontAwesomeIcon className={style.icon} icon={faInstagram}/></a></li>
+                            <li><a href={'https://vk.com/id516989152'}><FontAwesomeIcon className={style.icon} icon={faVk}/></a></li>
+                            <li><a href={'https://www.linkedin.com/in/aliaksei-darafeichyk-03b6611a4/'}><FontAwesomeIcon className={style.icon} icon={faLinkedin}/></a></li>
+                            <li><a href={'https://t.me/leshatrikster'}><FontAwesomeIcon className={style.icon} icon={faTelegram}/></a></li>
+                            <li><a href={'https://www.facebook.com/lesha.dorofeichik'}><FontAwesomeIcon className={style.icon} icon={faFacebook}/></a></li>
                         </Zoom>
                     </ul>
                     <p className={style.p}>© 2020 All Rights Reserved.</p>

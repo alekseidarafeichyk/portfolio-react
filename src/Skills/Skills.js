@@ -19,7 +19,7 @@ export const Skills = () => {
     const cssStyle = {backgroundImage: `url(${cssLogo})`,};
     const tsStyle = {backgroundImage: `url(${tsLogo})`,};
     return (
-        <div className={style.skillsBlock}>
+        <div className={style.skillsBlock} id={'skills'}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={'My skills'}/>
                 <div className={style.skills}>

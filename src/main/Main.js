@@ -2,10 +2,11 @@ import React from "react";
 import style from './Main.module.scss'
 import styleContainer from '../common/styles/Сontainer.module.css'
 import Particles from 'react-particles-js';
+import ReactTypingEffect from 'react-typing-effect';
+import Tilt from 'react-tilt'
 
 
 export const Main = () => {
-
     const particlesOpt = {
         "particles": {
             "number": {
@@ -57,16 +58,24 @@ export const Main = () => {
             }
         }
     }
+
     return (
         <div className={style.mainBlock}>
             <Particles className={style.particles}
-                       params={particlesOpt} />
+                       params={particlesOpt}/>
             <div className={`${styleContainer.container} ${style.mainBlockContainer}`}>
                 <div className={style.text}>
                     <h1>Alexey Darafeichyk</h1>
-                    <p>I am Front-End Developer</p>
+                    <p><ReactTypingEffect
+                        text={"I am Front-End Developer"}
+                        speed={100}
+                        typingDelay={500}
+                        eraseDelay={2000}
+                    /></p>
                 </div>
-                <div className={style.photo}></div>
+                <Tilt className="Tilt"  options={{max:25}} style={{zIndex: 1}} >
+                    <div className={style.photo}>23</div>
+                </Tilt>
             </div>
         </div>
     )

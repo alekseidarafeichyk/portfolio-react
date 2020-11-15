@@ -33,7 +33,7 @@ export const Contacts = () => {
         axios.post('https://message-nodejs-server.herokuapp.com/sendMessage',personalDataUser)
     }
 
-    return (<div className={style.contactBlock}>
+    return (<div className={style.contactBlock} id={'contacts'}>
             <div className={`${styleContainer.container} ${style.contactsBlockContainer}`}>
                 <Title title={'Contact'}/>
                 <Zoom left>
