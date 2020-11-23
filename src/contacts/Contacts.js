@@ -4,10 +4,13 @@ import style from './Contacts.module.scss'
 import {Title} from "../common/components/title/Title";
 import axios from 'axios';
 import Zoom from 'react-reveal/Zoom';
+import {Loader} from "../common/components/loader/Loader";
 
 
 
 export const Contacts = () => {
+    const [mode,setMode] = useState(false)
+
     const [personalDataUser,setPersonalDataUser] = useState({
         name:'',
         email:'',
@@ -29,8 +32,18 @@ export const Contacts = () => {
         setPersonalDataUser({...personalDataUser,message: e.currentTarget.value})    }
 
     const handleSubmit = (e) => {
+        setMode(true)
         e.preventDefault()
         axios.post('https://message-nodejs-server.herokuapp.com/sendMessage',personalDataUser)
+            .finally(res => {
+                setMode(false)
+                setPersonalDataUser({
+                    name:'',
+                    email:'',
+                    number: '',
+                    message:'',
+                })
+            })
     }
 
     return (<div className={style.contactBlock} id={'contacts'}>
@@ -60,7 +73,8 @@ export const Contacts = () => {
                                   value={personalDataUser.message}
                                   onChange={handleMessageChange}
                         />
-                        <button className={style.button}>Send message</button>
+                        {mode ? <Loader/> :
+                            <button className={style.button}>Send message</button> }
                     </form>
                 </Zoom>
             </div>

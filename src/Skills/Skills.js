@@ -6,18 +6,14 @@ import {Title} from "../common/components/title/Title";
 import reactLogo from "../assets/image/react.png";
 import reduxLogo from "../assets/image/redux.png";
 import jsLogo from "../assets/image/javascript.png";
-import htmlLogo from "../assets/image/html.png";
-import cssLogo from "../assets/image/CSS.3png.png";
-import tsLogo from "../assets/image/typescript.png";
 import Zoom from 'react-reveal/Zoom';
 
 export const Skills = () => {
     const reactStyle = {backgroundImage: `url(${reactLogo})`,};
     const reduxStyle = {backgroundImage: `url(${reduxLogo})`,};
     const jsStyle = {backgroundImage: `url(${jsLogo})`,};
-    const htmlStyle = {backgroundImage: `url(${htmlLogo})`,};
-    const cssStyle = {backgroundImage: `url(${cssLogo})`,};
-    const tsStyle = {backgroundImage: `url(${tsLogo})`,};
+
+
     return (
         <div className={style.skillsBlock} id={'skills'}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
@@ -25,27 +21,16 @@ export const Skills = () => {
                 <div className={style.skills}>
                     <Zoom top>
                         <Skill style={reactStyle} title='React'
-                               description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                               description={'I`m  usage of React library.Functional components: hooks(useState, useEffect, useReducer, etc).' +
+                               'Class components : life cycle methods,HOCs,local state,mapStateToProps,mapDispatchToProps. For state managment i use React-Redux library or Redux-Toolkit.I work in a bundle React + Typescript'}/>
                     </Zoom>
                     <Zoom top>
                         <Skill style={reduxStyle} title='Redux'
-                               description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                               description={'State management, Middlewares, Redux Thunk knowledge, reducers, actions, createStore, dispatch,Flux-workflow'}/>
                     </Zoom>
                     <Zoom top>
                         <Skill style={jsStyle} title='JavaScript'
-                               description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                    </Zoom>
-                    <Zoom top>
-                    <Skill style={tsStyle} title='Typescript'
-                           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                    </Zoom>
-                    <Zoom top>
-                    <Skill style={htmlStyle} title='HTML'
-                           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                    </Zoom>
-                    <Zoom top>
-                    <Skill style={cssStyle} title='CSS'
-                           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                               description={'I have knowledge of JavaScript.Understanding of function(expressions,declaration,arrow), Deep array and object copying,classes,promises,recursion,closure'}/>
                     </Zoom>
                     </div>
             </div>

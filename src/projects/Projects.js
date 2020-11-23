@@ -23,14 +23,16 @@ export const Projects = () => {
                 <Title title={'My works'}/>
                 <div className={style.projects}>
                     <Zoom bottom>
-                        <Project style={todolist}
+                        <Project gitRef={'https://alekseidarafeichyk.github.io/Todolist/'}
+                            style={todolist}
                                  title={'Todolist'}
-                                 description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '}/>
+                                 description={'In this project i use React/Redux-Toolkit library + TypeScript.Also used Unit tests,storybook,Material-UI.The project can be viewed at gh-pages.Test account - email:free@samuraijs.com,password: free'}/>
                     </Zoom>
                     <Zoom bottom>
-                        <Project style={social}
+                        <Project gitRef={'https://alekseidarafeichyk.github.io/social-network/'}
+                            style={social}
                                  title={'Social network'}
-                                 description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,'}/>
+                                 description={'In this project i use React/Redux library + TypeScript.Also used Unit tests.The project can be viewed at gh-pages.Test account - email:free@samuraijs.com,password: free'}/>
                     </Zoom>
                 </div>
             </div>

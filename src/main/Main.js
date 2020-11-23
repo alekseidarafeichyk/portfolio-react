@@ -4,6 +4,8 @@ import styleContainer from '../common/styles/Сontainer.module.css'
 import Particles from 'react-particles-js';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-tilt'
+import myPhoto from './../assets/image/myphoto.jpg'
+import socialNetworkImage from "../assets/image/social-network.jpg";
 
 
 export const Main = () => {
@@ -58,6 +60,9 @@ export const Main = () => {
             }
         }
     }
+    const photo = {
+        backgroundImage: `url(${myPhoto})`,
+    }
 
     return (
         <div className={style.mainBlock}>
@@ -74,7 +79,9 @@ export const Main = () => {
                     /></p>
                 </div>
                 <Tilt className="Tilt"  options={{max:25}} style={{zIndex: 1}} >
-                    <div className={style.photo}>23</div>
+                    <div style={photo} className={style.photo}>
+
+                    </div>
                 </Tilt>
             </div>
         </div>
