@@ -18,14 +18,12 @@
     background-size: cover;
     background-position: center;
   }
-
   h3 {
     @include text-settings($fontFamily, 20px, 600, 1.5);
     letter-spacing: .1px;
     margin-bottom: 6px;
     color: $textColor;
   }
-
   .description {
     @include text-settings($fontFamily, 14px, 400, 1.7);
     text-align: left;
@@ -33,7 +31,8 @@
     color: #9f9f9f;
   }
   @media screen and (max-width: 487px) {
-    width: auto;
+    width: 320px;
+    padding: 10px;
   }
 }
 
